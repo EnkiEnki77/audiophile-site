@@ -1,24 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
+import Home from './pages/Home'
+import Headphones from './pages/Headphones'
+import Speakers from './pages/Speakers'
+import Earphones from './pages/Earphones'
+import { GlobalStyles } from './Global.styles'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <Router>
+     <Routes>
+       <Route path='/'/>
+       <Route path='home' element={<Home/>}/>
+       <Route path='category/headphones' element={<Headphones/>}/>
+       <Route path='category/speakers' element={<Speakers/>}/>
+       <Route path='category/earphones' element={<Earphones/>}/>
+     </Routes>
+     <GlobalStyles/>
+   </Router>
+  
   );
 }
 
