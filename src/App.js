@@ -4,12 +4,15 @@ import Headphones from './pages/Headphones'
 import Speakers from './pages/Speakers'
 import Earphones from './pages/Earphones'
 import { GlobalStyles } from './Global.styles'
+import Login from './pages/Login'
+import Register from './pages/Register'
 
 function App() {
   return (
    <Router>
      <Routes>
-       <Route path='/'/>
+       <Route path='/' element={<Login/>} />
+       <Route path='register' element={<Register/>} />
        <Route path='home' element={<Home/>}/>
        <Route path='category/headphones' element={<Headphones/>}/>
        <Route path='category/speakers' element={<Speakers/>}/>

@@ -7,6 +7,7 @@ export const FooterCont  = styled.footer`
   background-color: #000000;
   display: flex;
   padding: 0;
+  justify-self: flex-end;
   /* position: absolute;
   bottom: 0; */
 `;

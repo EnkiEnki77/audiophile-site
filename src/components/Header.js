@@ -14,7 +14,9 @@ const Header = () => {
                     <NavLink to='/category/headphones'>Headphones</NavLink>
                     <NavLink to='/category/speakers'>Speakers</NavLink>
                     <NavLink to='/category/earphones'>Earphones</NavLink>
+                    
                 </NavLinks>
+                <NavLink to='/'>Logout</NavLink>
                 <Cart src={siteCart}/>
             </Nav>
         </HeaderContainer>
