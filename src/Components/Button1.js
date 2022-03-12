@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom'
 
 const Button1 = (props) => {
   return (
-    <Link to={props}><ButtonOne>SEE PRODUCT</ButtonOne></Link>
+    <Link to='/'><ButtonOne>SEE PRODUCT</ButtonOne></Link>
   )
 }
 
@@ -19,7 +19,7 @@ export const ButtonOne = styled.button`
     font-weight: 700;
     line-height: 18px;
     letter-spacing: 1px;
-    text-align: left;
+    text-align: center;
 
 
     &:hover{

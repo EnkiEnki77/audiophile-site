@@ -12,10 +12,18 @@ export const GlobalStyle = createGlobalStyle`
    padding: 0;
    width: 100%;
    font-size: 16px;
+   height: 100%;
+   overflow: auto;
   }
 
   a{
       text-decoration: none;
+      color: white;
+      border: none;
+
+      &:active{
+          color: white;
+      }
   }
 
   ul{

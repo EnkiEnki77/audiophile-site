@@ -38,6 +38,7 @@ const MobileNav = () => {
 export const NavContainer = styled.nav`
   width: 100%;
   height: 750px;
+  /* position: absolute; */
 `;
 
 export const NavUl  = styled.ul`
