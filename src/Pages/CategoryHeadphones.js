@@ -19,7 +19,7 @@ const CategoryHeadphones = () => {
 }
 
 export const CategoryHeadphonesContainer = styled.div`
-  
+  width: 100%;
 `;
 
 export default CategoryHeadphones
