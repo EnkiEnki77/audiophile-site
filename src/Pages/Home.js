@@ -10,19 +10,14 @@ import SiteMessage from '../Components/SiteMessage'
 import Item1IMG from '../assets/home/mobile/image-speaker-zx9.png'
 import Item2IMG from '../assets/home/mobile/image-speaker-zx7.jpg'
 import Item3IMG from '../assets/home/mobile/image-earphones-yx1.jpg'
+import HeadWithNav from '../Components/HeadWithNav'
 
 
 const Home = () => {
-    const [toggle, setToggle] = useState(false)
-
-    function handleNav(){
-        setToggle(!toggle)
-    }
-
+    
     return (
         <HomeContainer>
-            <Header toggle={handleNav}/>
-            {toggle && <HeadMobileNav/>}
+            <HeadWithNav/>
             <HeroContainer>
                 <HeroImg src={HeroImage}/>
                 <NewProduct>NEW PRODUCT</NewProduct>
@@ -59,7 +54,8 @@ const Home = () => {
 
 export const HomeContainer = styled.div`
   width: 100%;
-  height: 100%;
+
+  
 `;
 
 export const HeroImg = styled.img`
@@ -126,6 +122,7 @@ padding-bottom: 28px;
 `;
 
 export const HeroContainer = styled.div`
+
   width: 100%;
   height: 510px;
   position: relative;
@@ -133,6 +130,7 @@ export const HeroContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding-top: 90px;
 `;
 
 export const HeadMobileNav = styled(MobileNav)`
@@ -275,6 +273,13 @@ color: #000000;
 margin: 0;
 `;
 
+export const HeaderContainer = styled.div`
+  width: 100%;
+  height: ${props => props.toggle ? '804px' : null};
+  position: absolute;
+  background-color: rgba(0,0,0,0.2);
+ 
+`;
 
 
 export default Home

@@ -25,6 +25,9 @@ export const Head = styled.header`
   width:100%;
   background-color: #000000;
   padding: 1.5rem;
+  position: fixed;
+  z-index:3;
+ 
 `;
 
 export const Nav = styled(GiHamburgerMenu)`

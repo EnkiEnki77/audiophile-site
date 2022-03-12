@@ -5,9 +5,9 @@ import Headphones from '../assets/cart/image-removebg-preview(41).png'
 import Speakers from '../assets/cart/image-removebg-preview(38).png'
 import Earphones from '../assets/cart/image-removebg-preview(42).png'
 
-const MobileNav = () => {
+const MobileNav = (props) => {
   return (
-    <NavContainer>
+    <NavContainer header = {props.header}>
         <NavUl>
             <NavItem>
                 <NavImg src={Headphones}/>
@@ -38,7 +38,13 @@ const MobileNav = () => {
 export const NavContainer = styled.nav`
   width: 100%;
   height: 750px;
-  /* position: absolute; */
+  position: ${props => props.header ? 'absolute' : null};
+  padding-top: ${props => props.header ? '90px' : null};
+  background-color: #ffffff;
+  z-index:2;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  
 `;
 
 export const NavUl  = styled.ul`
