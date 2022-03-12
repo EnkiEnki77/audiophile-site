@@ -6,20 +6,20 @@ import MobileNav from '../Components/MobileNav';
 import Products from '../Components/Products';
 import SiteMessage from '../Components/SiteMessage';
 
-const CategoryHeadphones = () => {
+const CategorySpeakers = () => {
     return (
-        <CategoryHeadphonesContainer>
+        <CategorySpeakersContainer>
             <HeadWithNav/>
-            <Products category='HEADPHONES'/>
+            <Products category='Speakers'/>
             <MobileNav/>
             <SiteMessage/>
             <Footer/>
-        </CategoryHeadphonesContainer>
+        </CategorySpeakersContainer>
     )
 }
 
-export const CategoryHeadphonesContainer = styled.div`
+export const CategorySpeakersContainer = styled.div`
   width: 100%;
 `;
 
-export default CategoryHeadphones
+export default CategorySpeakers
