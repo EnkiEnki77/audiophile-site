@@ -11,6 +11,7 @@ import Item1IMG from '../assets/home/mobile/image-speaker-zx9.png'
 import Item2IMG from '../assets/home/mobile/image-speaker-zx7.jpg'
 import Item3IMG from '../assets/home/mobile/image-earphones-yx1.jpg'
 
+
 const Home = () => {
     const [toggle, setToggle] = useState(false)
 
